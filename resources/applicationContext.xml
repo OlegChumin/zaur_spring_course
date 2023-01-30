@@ -9,4 +9,9 @@
 
     <bean id="petCat" class="spring_introduction.Cat"></bean>
     <bean id="petDog" class="spring_introduction.Dog"></bean>
+    <bean id="petDuck" class="spring_introduction.Duck"></bean>
+    <bean id="petElephant" class="spring_introduction.Elephant"></bean>
+    <bean id="petFrog" class="spring_introduction.Frog"></bean>
+    <bean id="petGiraffe" class="spring_introduction.Giraffe"></bean>
+    <bean id="petHorse" class="spring_introduction.Horse"></bean>
 </beans>
