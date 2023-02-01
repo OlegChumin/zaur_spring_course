@@ -15,7 +15,11 @@
     <bean id="petGiraffe" class="spring_introduction.Giraffe"></bean>
     <bean id="petHorse" class="spring_introduction.Horse"></bean>
 
-    <bean id="somePerson" class="spring_introduction.Person">
-        <constructor-arg ref="petCat"></constructor-arg>
+    <bean id="somePerson" class="spring_introduction.Person3">
+        <property name="pet" ref="petHorse"/>
+        <property name="name" value="Oleg"/>
+        <property name="surName" value="Chumin"/>
+        <property name="age" value="47"/>
+
     </bean>
 </beans>
