@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:myApp.properties"/>
+
+    <bean id="petCat" class="spring_introduction.Cat"></bean>
+    <bean id="petDog" class="spring_introduction.Dog"></bean>
+    <bean id="petDuck" class="spring_introduction.Duck"></bean>
+    <bean id="petElephant" class="spring_introduction.Elephant"></bean>
+    <bean id="petFrog" class="spring_introduction.Frog"></bean>
+    <bean id="petGiraffe" class="spring_introduction.Giraffe"></bean>
+    <bean id="petHorse" class="spring_introduction.Horse"></bean>
+
+    <bean id="somePerson" class="spring_introduction.Person3 " scope="prototype">
+
+        <property name="pet" ref="petGiraffe"/>
+        <property name="name" value="${person.name}"/>
+        <property name="surName" value="${person.surName}"/>
+        <property name="age" value="${person.age}"/>
+    </bean>
+
+    <bean  id="somePerson50" class="spring_introduction.Person3" scope="prototype">
+        <property name="pet" ref="petDuck"/>
+        <property name="name" value="${aname}"/>
+        <property name="surName" value="${bname}"/>
+        <property name="age" value="${abc}"/>
+    </bean>
+</beans>
