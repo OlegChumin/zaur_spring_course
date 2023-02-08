@@ -20,6 +20,7 @@ public class Person3 {
     }
 
     public void setName(String name) {
+        System.out.println("Class Person3: set name");
         this.name = name;
     }
 
@@ -28,6 +29,7 @@ public class Person3 {
     }
 
     public void setSurName(String surName) {
+        System.out.println("Class Person3: set surName");
         this.surName = surName;
     }
 
@@ -36,6 +38,7 @@ public class Person3 {
     }
 
     public void setAge(int age) {
+        System.out.println("Class Person3: set age");
         this.age = age;
     }
 

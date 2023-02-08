@@ -7,13 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="petHorse" class="spring_introduction.Horse"></bean>
-
-    <bean id="personOleg" class="spring_introduction.Person3">
-        <property name="pet" ref="petHorse"/>
-        <property name="name" value="Oleg"/>
-        <property name="surName" value="Chumin"/>
-        <property name="age" value="47"/>
-
-    </bean>
+    <bean
+            id="petDog"
+            class="spring_introduction.Dog"
+            scope="prototype"/>
 </beans>

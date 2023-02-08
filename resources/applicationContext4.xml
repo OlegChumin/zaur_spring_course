@@ -9,26 +9,14 @@
 
     <context:property-placeholder location="classpath:myApp.properties"/>
 
-    <bean id="petCat" class="spring_introduction.Cat"></bean>
-    <bean id="petDog" class="spring_introduction.Dog"></bean>
-    <bean id="petDuck" class="spring_introduction.Duck"></bean>
-    <bean id="petElephant" class="spring_introduction.Elephant"></bean>
-    <bean id="petFrog" class="spring_introduction.Frog"></bean>
     <bean id="petGiraffe" class="spring_introduction.Giraffe"></bean>
     <bean id="petHorse" class="spring_introduction.Horse"></bean>
 
-    <bean id="somePerson" class="spring_introduction.Person3 " scope="prototype">
-
+    <bean id="personOleg" class="spring_introduction.Person3">
         <property name="pet" ref="petGiraffe"/>
-        <property name="name" value="${person.name}"/>
-        <property name="surName" value="${person.surName}"/>
-        <property name="age" value="${person.age}"/>
+        <property name="name" value="${person3.name}"/>
+        <property name="surName" value="${person3.surName}"/>
+        <property name="age" value="${person3.age}"/>
     </bean>
 
-    <bean  id="somePerson50" class="spring_introduction.Person3" scope="prototype">
-        <property name="pet" ref="petDuck"/>
-        <property name="name" value="${aname}"/>
-        <property name="surName" value="${bname}"/>
-        <property name="age" value="${abc}"/>
-    </bean>
 </beans>
