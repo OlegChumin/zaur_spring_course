@@ -8,11 +8,11 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="myCat"
-          class="spring_introduction.Cat">
+          class="spring_introduction.lessons001_013.Cat">
     </bean>
 
     <bean id="myDog"
-          class="spring_introduction.Dog">
+          class="spring_introduction.lessons001_013.Dog">
     </bean>
 
 </beans>

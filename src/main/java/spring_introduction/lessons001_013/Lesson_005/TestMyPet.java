@@ -1,7 +1,7 @@
-package spring_introduction.Lesson_005;
+package spring_introduction.lessons001_013.Lesson_005;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import spring_introduction.Pet;
+import spring_introduction.lessons001_013.Pet;
 
 public class TestMyPet {
     public static void main(String[] args) {

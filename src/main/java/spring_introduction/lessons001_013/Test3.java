@@ -1,4 +1,4 @@
-package spring_introduction;
+package spring_introduction.lessons001_013;
 
 public class Test3 {
     public static void main(String[] args) {

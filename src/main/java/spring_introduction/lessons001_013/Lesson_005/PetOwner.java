@@ -1,6 +1,6 @@
-package spring_introduction.Lesson_005;
+package spring_introduction.lessons001_013.Lesson_005;
 
-import spring_introduction.Pet;
+import spring_introduction.lessons001_013.Pet;
 
 public class PetOwner {
     private Pet pet;

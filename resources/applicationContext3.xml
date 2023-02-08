@@ -7,9 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="petHorse" class="spring_introduction.Horse"></bean>
+    <bean id="petHorse" class="spring_introduction.lessons001_013.Horse"></bean>
 
-    <bean id="personOleg" class="spring_introduction.Person3">
+    <bean id="personOleg" class="spring_introduction.lessons001_013.Person3">
         <property name="pet" ref="petHorse"/>
         <property name="name" value="Oleg"/>
         <property name="surName" value="Chumin"/>

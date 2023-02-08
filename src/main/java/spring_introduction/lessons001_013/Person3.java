@@ -1,4 +1,4 @@
-package spring_introduction;
+package spring_introduction.lessons001_013;
 //DI by setter
 
 public class Person3 {
