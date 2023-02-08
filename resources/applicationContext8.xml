@@ -9,5 +9,7 @@
 
     <bean
             id="petDog"
-            class="spring_introduction.Dog2"/>
+            class="spring_introduction.Dog2"
+            init-method="init"
+            destroy-method="destroy"/>
 </beans>
