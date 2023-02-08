@@ -2,7 +2,7 @@ package spring_introduction;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Test11 {
+public class Test12 {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext7.xml");
         Dog myDog = context.getBean("petDog", Dog.class);

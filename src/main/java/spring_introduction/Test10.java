@@ -4,15 +4,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test10 {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext6.xml");
-        Dog myDog = context.getBean("petDog", Dog.class);
-        myDog.setName("Belka");
-        Dog newDog = context.getBean("petDog", Dog.class);
-        newDog.setName("Strelka"); //singleton for stateless objects!
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext8.xml");
 
-        System.out.println("myDog == newDog : " + (myDog == newDog));
-        System.out.println("myDog = " + myDog.getName());
-        System.out.println("newDog = " + newDog.getName());
-        System.out.println("----------------------------------------");
+        context.close();
     }
 }

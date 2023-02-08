@@ -13,5 +13,6 @@ public class Test9 {
         System.out.println("myDog = " + myDog);
         System.out.println("newDog = " + newDog);
         System.out.println("----------------------------------------");
+        context.close();
     }
 }
