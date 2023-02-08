@@ -16,6 +16,6 @@
     <bean id="petHorse" class="spring_introduction.Horse"></bean>
 
     <bean id="somePerson" class="spring_introduction.Person2">
-        <property name="pet" ref="petCat"/>
+        <property name="pet" ref="petDog"/>
     </bean>
 </beans>

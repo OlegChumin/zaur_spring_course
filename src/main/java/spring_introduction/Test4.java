@@ -10,6 +10,6 @@ public class Test4 {
         Person person = new Person(pet); // hard code dependency
         person.callYourPet();
 
-        context.close();
+        context.close(); //! to close
     }
 }
