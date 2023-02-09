@@ -1,22 +1,23 @@
-package spring_introduction.lessons014_023.lesson016;
+package spring_introduction.lessons014_023.lesson017;
 //DI by setter
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import spring_introduction.lessons001_013.Pet;
 
-@Component("person_016")
-public class Person016 {
+@Component("person_017")
+public class Person017 {
     //fields for Person3
     private String name;
     private String surName;
     private int age;
 
     //Pet
+    @Autowired
     private Pet pet;
 
-    public Person016() {
-        System.out.println("Person016 bean been created");
+    public Person017() {
+        System.out.println("Person017 bean been created");
     }
 
     //    @Autowired
@@ -30,7 +31,7 @@ public class Person016 {
     }
 
     public void setName(String name) {
-        System.out.println("Class Person016: set name");
+        System.out.println("Class Person017: set name");
         this.name = name;
     }
 
@@ -39,7 +40,7 @@ public class Person016 {
     }
 
     public void setSurName(String surName) {
-        System.out.println("Class Person016: set surName");
+        System.out.println("Class Person017: set surName");
         this.surName = surName;
     }
 
@@ -48,13 +49,12 @@ public class Person016 {
     }
 
     public void setAge(int age) {
-        System.out.println("Class Person016: set age");
+        System.out.println("Class Person017: set age");
         this.age = age;
     }
 
-    @Autowired
     public void setPet(Pet pet) {
-        System.out.println("Class Person016: set pet");
+        System.out.println("Class Person017: set pet");
         this.pet = pet;
     }
 

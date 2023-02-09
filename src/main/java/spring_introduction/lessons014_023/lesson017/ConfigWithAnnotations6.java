@@ -1,13 +1,13 @@
-package spring_introduction.lessons014_023.lesson016;
+package spring_introduction.lessons014_023.lesson017;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import spring_introduction.lessons014_023.lesson015.Person015;
+import spring_introduction.lessons014_023.lesson016.Person016;
 
-public class ConfigWithAnnotations5 {
+public class ConfigWithAnnotations6 {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext014.xml");
-        Person016 person016 = context.getBean("person_016", Person016.class);
-        person016.callYourPet();
+        Person017 person017 = context.getBean("person_017", Person017.class);
+        person017.callYourPet();
         context.close();
     }
 }
