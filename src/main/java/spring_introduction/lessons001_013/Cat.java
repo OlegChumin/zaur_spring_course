@@ -1,5 +1,8 @@
 package spring_introduction.lessons001_013;
 
+import org.springframework.stereotype.Component;
+
+@Component("petCat")
 public class Cat implements Pet{
     public Cat() {
         System.out.println("Cat bean is created");
