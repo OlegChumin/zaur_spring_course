@@ -1,4 +1,4 @@
-package spring_introduction.lessons014_023.lesson015;
+package spring_introduction.lessons014_023.lesson016;
 //DI by setter
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import spring_introduction.lessons001_013.Pet;
 
 @Component("person_015")
-public class Person015 {
+public class Person016 {
     //fields for Person3
     private String name;
     private String surName;
@@ -17,7 +17,7 @@ public class Person015 {
 
 
     @Autowired
-    public Person015(Pet pet) {
+    public Person016(Pet pet) {
         System.out.println("Person015 bean been created");
         this.pet = pet;
     }
