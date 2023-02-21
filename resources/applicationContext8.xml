@@ -8,7 +8,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean
-            id="petDog"
+            id="petDog2"
             class="spring_introduction.lessons001_013.Dog2"
             init-method="init"
             destroy-method="destroy"/>

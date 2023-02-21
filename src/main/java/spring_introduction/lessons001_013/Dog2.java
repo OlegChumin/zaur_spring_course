@@ -5,12 +5,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Dog2 implements Pet{
     public Dog2() {
-        System.out.println("Dog bean is created");
+        System.out.println("Dog2 bean is created");
     }
 
     @Override
     public void say() {
-        System.out.println("Dog is barking Bow-wow");
+        System.out.println("Dog2 is barking Bow-wow");
     }
 
     public void init() {
