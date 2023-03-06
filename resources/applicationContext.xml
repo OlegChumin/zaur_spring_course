@@ -7,15 +7,15 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="petCat" class="spring_introduction.lessons001_013.Cat"/>
-    <bean id="petDog" class="spring_introduction.lessons001_013.Dog"/>
-    <bean id="petDuck" class="spring_introduction.lessons001_013.Duck"/>
-    <bean id="petElephant" class="spring_introduction.lessons001_013.Elephant"/>
-    <bean id="petFrog" class="spring_introduction.lessons001_013.Frog"/>
-    <bean id="petGiraffe" class="spring_introduction.lessons001_013.Giraffe"/>
-    <bean id="petHorse" class="spring_introduction.lessons001_013.Horse"></bean>
+    <bean id="petCat" class="spring_introduction.lesson001_013.Cat"/>
+    <bean id="petDog" class="spring_introduction.lesson001_013.Dog"/>
+    <bean id="petDuck" class="spring_introduction.lesson001_013.Duck"/>
+    <bean id="petElephant" class="spring_introduction.lesson001_013.Elephant"/>
+    <bean id="petFrog" class="spring_introduction.lesson001_013.Frog"/>
+    <bean id="petGiraffe" class="spring_introduction.lesson001_013.Giraffe"/>
+    <bean id="petHorse" class="spring_introduction.lesson001_013.Horse"></bean>
 
-    <bean id="somePerson" class="spring_introduction.lessons001_013.Person">
+    <bean id="somePerson" class="spring_introduction.lesson001_013.Person">
         <constructor-arg ref="petDuck"></constructor-arg>
     </bean>
 </beans>

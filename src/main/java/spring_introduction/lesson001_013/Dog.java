@@ -1,11 +1,10 @@
-package for_lesson_018;
+package spring_introduction.lesson001_013;
 
 import org.springframework.stereotype.Component;
 
-@Component("dog_018")
-public class Dog implements Pet {
+@Component("petDog")
+public class Dog implements Pet{
     private String name;
-
     public Dog() {
         System.out.println("Dog bean is created");
     }

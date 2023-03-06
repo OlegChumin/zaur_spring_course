@@ -9,7 +9,7 @@
 
     <bean
             id="petDog2"
-            class="spring_introduction.lessons001_013.Dog2"
+            class="spring_introduction.lesson001_013.Dog2"
             init-method="init"
             destroy-method="destroy"/>
 </beans>

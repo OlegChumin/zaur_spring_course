@@ -7,15 +7,15 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="petCat" class="spring_introduction.lessons001_013.Cat"></bean>
-    <bean id="petDog" class="spring_introduction.lessons001_013.Dog"></bean>
-    <bean id="petDuck" class="spring_introduction.lessons001_013.Duck"></bean>
-    <bean id="petElephant" class="spring_introduction.lessons001_013.Elephant"></bean>
-    <bean id="petFrog" class="spring_introduction.lessons001_013.Frog"></bean>
-    <bean id="petGiraffe" class="spring_introduction.lessons001_013.Giraffe"></bean>
-    <bean id="petHorse" class="spring_introduction.lessons001_013.Horse"></bean>
+    <bean id="petCat" class="spring_introduction.lesson001_013.Cat"></bean>
+    <bean id="petDog" class="spring_introduction.lesson001_013.Dog"></bean>
+    <bean id="petDuck" class="spring_introduction.lesson001_013.Duck"></bean>
+    <bean id="petElephant" class="spring_introduction.lesson001_013.Elephant"></bean>
+    <bean id="petFrog" class="spring_introduction.lesson001_013.Frog"></bean>
+    <bean id="petGiraffe" class="spring_introduction.lesson001_013.Giraffe"></bean>
+    <bean id="petHorse" class="spring_introduction.lesson001_013.Horse"></bean>
 
-    <bean id="somePerson" class="spring_introduction.lessons001_013.Person2">
+    <bean id="somePerson" class="spring_introduction.lesson001_013.Person2">
         <property name="pet" ref="petDog"/>
     </bean>
 </beans>
