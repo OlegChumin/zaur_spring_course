@@ -1,4 +1,4 @@
-package aop.aspects;
+package aop;
 
 public class Book {
 }

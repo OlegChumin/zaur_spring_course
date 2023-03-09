@@ -1,4 +1,4 @@
-package aop;
+package aop.aspects;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -17,7 +17,7 @@ public class LoggingAndSecurityAspect {
 
     @Before("allGetMethods()") //аннотация выполнения Aspect логгирования до выполнение метода из UniLibrary
     public void beforeGetLoggingAdvice() {
-        System.out.println("beforeGetLoggingAdvic: попытка получить книгу/журнал");
+        System.out.println("beforeGetLoggingAdvic: логированние попытки получить книгу/журнал");
     }
 
     @Before("allGetMethods()") //аннотация выполнения Aspect проверки безопасности до выполнение метода из UniLibrary
