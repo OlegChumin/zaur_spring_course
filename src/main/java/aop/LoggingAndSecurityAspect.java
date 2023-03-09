@@ -6,7 +6,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
-@Aspect
+@Aspect // аннотация для Spring, что это класс аспектов (методов скозной логики для проекта)
 public class LoggingAndSecurityAspect {
     @Pointcut("execution(* get*())") // Pointcut - выражение в виде шаблона - метода на который ссылаются Аспекты ниже
     //в данном случае аспекты выполняются для методов со всеми модификаторами доступа
