@@ -24,6 +24,4 @@ public class LoggingAndSecurityAspect {
     public void beforeGetSecurityAdvice() {
         System.out.println("beforeGetSecurityAdvice: проверка прав на получение книги/журнала");
     }
-
-
 }
