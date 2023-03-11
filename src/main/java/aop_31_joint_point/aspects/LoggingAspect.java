@@ -9,8 +9,9 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Order(1)
 public class LoggingAspect {
-    @Before("aop_31_joint_point.MyPointcuts.allGetMethods()") //аннотация выполнения Aspect логгирования до выполнение метода из UniLibrary
+    @Before("aop_31_joint_point.MyPointcuts.allAddMethods()") //аннотация выполнения Aspect логгирования до выполнение метода из UniLibrary
     public void beforeGetLoggingAdvice() {
         System.out.println("beforeGetLoggingAdvic: логированние попытки получить книгу/журнал");
+        System.out.println("----------------------------");
     }
 }
