@@ -2,7 +2,6 @@ package aop_32_AdviceAfterReturning;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class Student {
     private String name;
     private String SurName;
