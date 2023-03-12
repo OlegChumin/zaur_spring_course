@@ -26,10 +26,10 @@ public class UniversityLoggingAspect {
         Student firstStudent = students.get(0);
         String surName = firstStudent.getSurName();
         surName = "Mr. " + surName;
-        firstStudent.setSurName(surName);
+        firstStudent.setSurName(surName); // меняем значение перед присовением метода getStudents
 
         double avgGrade = firstStudent.getAvgGrade();
         avgGrade++;
-        firstStudent.setAvgGrade(avgGrade);
+        firstStudent.setAvgGrade(avgGrade); // меняем значение перед присовением метода getStudents
     }
 }
