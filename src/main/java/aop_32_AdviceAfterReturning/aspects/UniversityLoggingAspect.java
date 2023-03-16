@@ -1,8 +1,9 @@
 package aop_32_AdviceAfterReturning.aspects;
 
-import aop_32_AdviceAfterReturning.Student;
+import aop_33_adviceAfterThrowing.Student;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -17,8 +18,6 @@ public class UniversityLoggingAspect {
         System.out.println("beforeGetStudentsLoggingAdvice: логируем получение списка студентов перед " +
                 "методом getStudents");
     }
-
-
     @AfterReturning(pointcut = "execution(* getStudents())", returning = "students")
     public void afterReturningGetStudentsLoggingAdvice(JoinPoint joinPoint, List<Student> students) {
         System.out.println("afterReturningGetStudentsLoggingAdvice: логируем получение списка студентов после работы " +
@@ -32,4 +31,5 @@ public class UniversityLoggingAspect {
         avgGrade++;
         firstStudent.setAvgGrade(avgGrade); // меняем значение перед присовением метода getStudents
     }
+
 }
