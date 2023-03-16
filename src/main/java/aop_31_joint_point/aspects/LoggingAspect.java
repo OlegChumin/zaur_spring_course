@@ -30,7 +30,7 @@ public class LoggingAspect {
                             myBook.getName() + " автор - " + myBook.getAuthor() + " год издания - " +
                             myBook.getYearOfPublication());
                 } else if (element instanceof String) {
-                    System.out.println("книгу вбиблиотек добававляет " + element);
+                    System.out.println("книгу в библиотеку добававляет " + element);
                 }
             }
         }
