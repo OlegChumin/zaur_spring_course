@@ -20,13 +20,13 @@ public class UniversityLoggingAspect {
 
 
     @AfterReturning(pointcut = "execution(* getStudents())", returning = "students")
-    public void afterGetStudentsLoggingAdvice(JoinPoint joinPoint, List<Student> students) {
-        System.out.println("afterGetStudentsLoggingAdvice: логируем получение списка студентов после работы " +
+    public void afterReturningGetStudentsLoggingAdvice(JoinPoint joinPoint, List<Student> students) {
+        System.out.println("afterReturningGetStudentsLoggingAdvice: логируем получение списка студентов после работы " +
                 "метода getStudents");
         Student firstStudent = students.get(0);
         String surName = firstStudent.getSurName();
         surName = "Mr. " + surName;
-        firstStudent.setSurName(surName); // меняем значение перед присовением метода getStudents
+        firstStudent.setSurName(surName); // меняем значение перед присвоением метода getStudents
 
         double avgGrade = firstStudent.getAvgGrade();
         avgGrade++;
