@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-@Order(2)
+@Order(20)
 public class SecurityAspect {
     @Before("aop_31_joint_point.MyPointcuts.allAddMethods()") //аннотация выполнения Aspect проверки безопасности до выполнение метода из UniLibrary
     public void beforeGetSecurityAdvice() {

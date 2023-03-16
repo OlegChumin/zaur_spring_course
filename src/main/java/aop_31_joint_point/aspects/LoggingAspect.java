@@ -10,7 +10,7 @@ import org.aspectj.lang.JoinPoint;
 
 @Component
 @Aspect
-@Order(1)
+@Order(10)
 public class LoggingAspect {
     @Before("aop_31_joint_point.MyPointcuts.allAddMethods()")
     //аннотация выполнения Aspect логгирования до выполнение метода из UniLibrary
