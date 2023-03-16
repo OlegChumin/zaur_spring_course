@@ -1,4 +1,4 @@
-package aop_33_adviceAfterThrowing;
+package aop_33_adviceAfterThrowing_1;
 
 import org.springframework.stereotype.Component;
 

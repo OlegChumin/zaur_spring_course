@@ -1,14 +1,9 @@
-package aop_33_adviceAfterThrowing.aspects;
+package aop_33_adviceAfterThrowing_2.aspects;
 
-import aop_33_adviceAfterThrowing.Student;
-import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 @Component
 @Aspect
@@ -19,8 +14,8 @@ public class UniversityLoggingAspect {
                 "методом getStudents");
     }
 
-    @AfterThrowing("execution(* getStudents())")
-    public void afterThrowingGetStudentsLoggingAdvice() {
-        System.out.println("afterThrowingGetStudentsLoggingAdvice: логгируем выброс исключения");
-    }
+    @AfterThrowing(pointcut = "execution(* getStudents())", throwing= "exception")
+    public void afterThrowingGetStudentsLoggingAdvice(Throwable exception) {
+        System.out.println("afterThrowingGetStudentsLoggingAdvice: логгируем выброс исключения " + exception);
+    } // исключение всегда попадет в main и обрабатывать его тут не можем
 }

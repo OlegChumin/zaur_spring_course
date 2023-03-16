@@ -1,9 +1,8 @@
 package aop_32_AdviceAfterReturning.aspects;
 
-import aop_33_adviceAfterThrowing.Student;
+import aop_33_adviceAfterThrowing_1.Student;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;

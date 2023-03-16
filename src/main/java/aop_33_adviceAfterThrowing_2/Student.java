@@ -1,4 +1,4 @@
-package aop_33_adviceAfterThrowing;
+package aop_33_adviceAfterThrowing_2;
 
 public class Student {
     private String name;
