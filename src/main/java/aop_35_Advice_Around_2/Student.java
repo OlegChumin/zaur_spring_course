@@ -1,4 +1,4 @@
-package aop_35_Advice_Around_1;
+package aop_35_Advice_Around_2;
 
 public class Student {
     private String name;
