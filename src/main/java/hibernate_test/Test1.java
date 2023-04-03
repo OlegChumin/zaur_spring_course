@@ -10,18 +10,16 @@ public class Test1 {
 
 
         SessionFactory sessionFactory = new Configuration()
-                .configure("hibernate.cfg.xml")
+                .configure() // "hibernate.cfg.xml"
                 .addAnnotatedClass(Employee.class)
                 .buildSessionFactory();
 
-
-
         try {
             Session session = sessionFactory.getCurrentSession();
-            Employee employee =  new Employee("SomeName4", "SomeSurName4", "IT", 3400);
+            Employee employee =  new Employee("Oleg", "Chumin", "IT", 10_400);
             session.beginTransaction();
-//            session.save(employee);
-            session.clear();
+            session.save(employee);
+//            session.clear();
             session.getTransaction().commit();
             System.out.println("Done!");
             System.out.println(employee);
