@@ -4,7 +4,6 @@ import java.sql.*;
 
 public class TestConnection {
     public static void main(String[] args) {
-//        String url = "jdbc:mysql://localhost:3306/my_db?useSSL=false&amp;serverTimezone=UTC";
         String url = "jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
 
         String user = "bestuser";
