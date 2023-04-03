@@ -31,6 +31,5 @@ public class Test2 {
         } finally {
             sessionFactory.close();
         }
-
     }
 }
