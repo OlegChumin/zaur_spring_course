@@ -2,13 +2,12 @@ package hibernate_test;
 
 import java.util.Properties;
 
+import hibernate_test.entity.Employees;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-
-import hibernate_test.entity.Employee;
 
 public class Test1 {
     public static void main(String[] args) {
@@ -30,14 +29,14 @@ public class Test1 {
 
         // создание объекта SessionFactory
         SessionFactory sessionFactory = new MetadataSources(registry)
-                .addAnnotatedClass(Employee.class)
+                .addAnnotatedClass(Employees.class)
                 .buildMetadata()
                 .buildSessionFactory();
 
         try {
             // создание объекта Session и начало транзакции
             Session session = sessionFactory.getCurrentSession();
-            Employee employee = new Employee("Oleg", "Chumin", "IT", 10_400);
+            Employees employee = new Employees("Oleg", "Chumin", "IT", 10_400);
             session.beginTransaction();
 
             // сохранение объекта Employee в базе данных

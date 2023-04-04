@@ -2,7 +2,7 @@ package hibernate_test.ViaProperties;
 
 import java.util.Properties;
 
-import hibernate_test.entity.Employee;
+import hibernate_test.entity.Employees;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -22,7 +22,7 @@ public class HibernateUtil {
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         properties.setProperty("hibernate.show_sql", "true");
         configuration.setProperties(properties);
-        configuration.addAnnotatedClass(Employee.class);
+        configuration.addAnnotatedClass(Employees.class);
         sessionFactory = configuration.buildSessionFactory();
     }
 

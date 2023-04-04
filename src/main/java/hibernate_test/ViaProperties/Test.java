@@ -1,6 +1,6 @@
 package hibernate_test.ViaProperties;
 
-import hibernate_test.entity.Employee;
+import hibernate_test.entity.Employees;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -9,7 +9,7 @@ public class Test {
         Session session = null;
         try {
             session = HibernateUtil.getSession();
-            Employee employee = new Employee("Oleg", "Chumin", "IT", 10_400);
+            Employees employee = new Employees("Oleg", "Chumin", "IT", 10_400);
             Transaction transaction = session.beginTransaction();
             session.save(employee);
             transaction.commit();

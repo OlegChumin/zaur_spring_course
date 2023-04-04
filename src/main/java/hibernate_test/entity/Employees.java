@@ -3,11 +3,10 @@ package hibernate_test.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "employees")
-public class Employee {
+@Table
+public class Employees {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
@@ -23,10 +22,10 @@ public class Employee {
     @Column(name = "salary")
     private int salary;
 
-    public Employee() {
+    public Employees() {
     }
 
-    public Employee(String name, String surName, String department, int salary) {
+    public Employees(String name, String surName, String department, int salary) {
         this.name = name;
         this.surName = surName;
         this.department = department;
