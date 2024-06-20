@@ -9,10 +9,10 @@
 
     <context:property-placeholder location="classpath:myApp.properties"/>
 
-    <bean id="petGiraffe" class="spring_introduction.lesson001_013.Giraffe"></bean>
-    <bean id="petHorse" class="spring_introduction.lesson001_013.Horse"></bean>
+    <bean id="petGiraffe" class="_01_spring_introduction.lesson001_013.Giraffe"></bean>
+    <bean id="petHorse" class="_01_spring_introduction.lesson001_013.Horse"></bean>
 
-    <bean id="personOleg" class="spring_introduction.lesson001_013.Person3">
+    <bean id="personOleg" class="_01_spring_introduction.lesson001_013.Person3">
         <property name="pet" ref="petGiraffe"/>
         <property name="name" value="${person3.name}"/>
         <property name="surName" value="${person3.surName}"/>

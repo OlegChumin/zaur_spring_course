@@ -9,6 +9,6 @@
 
     <bean
             id="petDog"
-            class="spring_introduction.lesson001_013.Dog"
+            class="_01_spring_introduction.lesson001_013.Dog"
             scope="prototype"/>
 </beans>

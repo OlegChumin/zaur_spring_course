@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Определение бина Person -->
+    <bean id="person" class="_01_spring_introduction.lesson001_013._013.Person"
+          init-method="init"
+          destroy-method="destroy"
+          scope = "singleton">
+        <property name="name" value="John Wick"/>
+        <property name="age" value="50"/>
+    </bean>
+
+</beans>
