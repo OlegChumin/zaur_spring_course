@@ -1,4 +1,4 @@
-package for_lesson_018;
+package _01_spring_introduction.lesson_018;
 //DI by setter
 
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,5 @@
-package _01_spring_introduction.lesson018;
+package _01_spring_introduction.lesson_018;
 
-import for_lesson_018.Person;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SampleOfQualifierAnnotation {

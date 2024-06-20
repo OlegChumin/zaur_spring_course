@@ -1,8 +1,6 @@
-package for_lesson_018;
+package _01_spring_introduction.lesson_022.config.models;
 
-import org.springframework.stereotype.Component;
-
-@Component("cat_018")
+//@Component("cat_022")
 public class Cat implements Pet {
     public Cat() {
         System.out.println("Cat bean is created");
