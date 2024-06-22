@@ -7,7 +7,7 @@ public class Test_AOP_JointPoint {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         UniLibrary uniLibrary = context.getBean("uniLibrary", UniLibrary.class);
         Book book = context.getBean("book", Book.class);
-        uniLibrary.getBook();
+        uniLibrary.getBook(book);
         uniLibrary.addBook("Zaur", book);
         uniLibrary.addMagazine();
         context.close();

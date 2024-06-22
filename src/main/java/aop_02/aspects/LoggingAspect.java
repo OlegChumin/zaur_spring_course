@@ -16,7 +16,20 @@ public class LoggingAspect {
 //    }
 
     // II
-    @Before("execution(public void getBook(String))")
+//    @Before("execution(public void getBook(String))")
+//    public void beforeGetBookAdvice() {
+//        System.out.println("BeforeGetBookAdvice: попытка получить книгу");
+//    }
+
+    //II
+//    @Before("execution(public void *(*))")
+//    public void beforeGetBookAdvice() {
+//        System.out.println("BeforeGetBookAdvice: попытка получить книгу");
+//    }
+
+    //III любое количество параметров
+    //II
+    @Before("execution(public void *(..))")
     public void beforeGetBookAdvice() {
         System.out.println("BeforeGetBookAdvice: попытка получить книгу");
     }

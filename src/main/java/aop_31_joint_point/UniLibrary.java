@@ -4,8 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component // бин создается при сканировании пакета если singleton
 public class UniLibrary {
-    public void getBook() {
-        System.out.println("Мы берем книгу из UniLibrary");
+    public void getBook(Book book) {
+        System.out.println("Мы берем книгу из UniLibrary" + book.getName());
         System.out.println("----------------------------");
     }
 
