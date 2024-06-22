@@ -21,14 +21,13 @@ public class LoggingAspect {
 //        System.out.println("BeforeGetBookAdvice: попытка получить книгу");
 //    }
 
-    //II
+    //III
 //    @Before("execution(public void *(*))")
 //    public void beforeGetBookAdvice() {
 //        System.out.println("BeforeGetBookAdvice: попытка получить книгу");
 //    }
 
-    //III любое количество параметров
-    //II
+    //IV любое количество параметров
     @Before("execution(public void *(..))")
     public void beforeGetBookAdvice() {
         System.out.println("BeforeGetBookAdvice: попытка получить книгу");
