@@ -17,18 +17,23 @@ public class UniversityLoggingAspect {
         System.out.println("beforeGetStudentsLoggingAdvice: логируем получение списка студентов перед " +
                 "методом getStudents");
     }
+
+    //@AfterReturning("execution(* getStudents())")
     @AfterReturning(pointcut = "execution(* getStudents())", returning = "students")
-    public void afterReturningGetStudentsLoggingAdvice(JoinPoint joinPoint, List<Student> students) {
-        System.out.println("afterReturningGetStudentsLoggingAdvice: логируем получение списка студентов после работы " +
-                "метода getStudents");
-        Student firstStudent = students.get(0);
-        String surName = firstStudent.getSurName();
-        surName = "Mr. " + surName;
-        firstStudent.setSurName(surName); // меняем значение перед присвоением метода getStudents
+    public void afterReturningGetStudentsLoggingAdvice(JoinPoint joinPoint, List<Student> students) throws InterruptedException {
+        if (students != null && !students.isEmpty()) {
+            Student firstStudent = students.get(0);
+            String surName = firstStudent.getSurName();
+            surName = "Mr. " + surName;
+            firstStudent.setSurName(surName);
 
-        double avgGrade = firstStudent.getAvgGrade();
-        avgGrade++;
-        firstStudent.setAvgGrade(avgGrade); // меняем значение перед присовением метода getStudents
+            double avgGrade = firstStudent.getAvgGrade();
+            avgGrade++;
+            firstStudent.setAvgGrade(avgGrade);
+
+            System.out.println("afterReturningGetStudentsLoggingAdvice: логируем получение списка студентов после работы " +
+                    "метода getStudents");
+            Thread.sleep(500);
+        }
     }
-
 }

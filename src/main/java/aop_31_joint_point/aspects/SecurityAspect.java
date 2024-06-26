@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Order(20)
 public class SecurityAspect {
-    @Before("aop_31_joint_point.MyPointcuts.allAddMethods()") //аннотация выполнения Aspect проверки безопасности до выполнение метода из UniLibrary
+    @Before("aop_31_joint_point.MyPointcuts.allAddMethods()")
     public void beforeGetSecurityAdvice() {
         System.out.println("beforeGetSecurityAdvice: проверка прав на получение книги/журнала");
         System.out.println("----------------------------");

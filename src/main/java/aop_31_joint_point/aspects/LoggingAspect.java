@@ -15,7 +15,7 @@ public class LoggingAspect {
     @Before("aop_31_joint_point.MyPointcuts.allAddMethods()")
     //аннотация выполнения Aspect логгирования до выполнение метода из UniLibrary
     public void beforeAddLoggingAdvice(JoinPoint joinPoint) {
-        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
+        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();  // работает рефлексия
         System.out.println("methodSignature = " + methodSignature);
         System.out.println("methodSignature.getMethod() = " + methodSignature.getMethod());
         System.out.println("methodSignature.getReturnType() = " + methodSignature.getReturnType());
@@ -30,7 +30,7 @@ public class LoggingAspect {
                             myBook.getName() + " автор - " + myBook.getAuthor() + " год издания - " +
                             myBook.getYearOfPublication());
                 } else if (element instanceof String) {
-                    System.out.println("книгу в библиотеку добававляет " + element);
+                    System.out.println("книгу в библиотеку добавляет " + element);
                 }
             }
         }
